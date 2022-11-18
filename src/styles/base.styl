@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body, html
+  background #f2f2f2
+  margin 0 
+  padding 0 
+  outline-color #136ae4
+  font-family 'Roboto', sans-serif;
+
+
+.container-fluid
+  width 80%
+  max-width 1000px
+  margin 0 auto 
+  display flex
+
+.container
+  width 98%
+  margin 0 auto 
+  display flex
+  flex-wrap wrap
+
+#bar-container
+  margin-top 30px
+
+.col
+  padding 10px 1% 10px 1%
+  display inline-block
+  flex 1
+.col-3
+  flex-grow 0
+  width 33%
+  position relative
+
+@media only screen and (max-width 850px)
+  .container
+    flex-direction column;
+  .col-3 
+    width 50%
+@media only screen and (max-width 550px)
+  .col-3 
+    width 100%
+  
